@@ -46,8 +46,13 @@ button {
 }
 
 img {
-    min-width: 100%;
+    max-width: 100%;
     height: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 p {
@@ -90,6 +95,14 @@ ul {
     font-weight: 700;
     color: #FFFFFF;
     margin-right: 30px;
+}
+
+.men .header__button-change {
+    background-color: #1178B2;
+}
+
+.women .header__button-change {
+    background-color: #C300C7;
 }
 
 .header__button-change:last-child {
@@ -174,17 +187,27 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .footer__contacts {
     display: flex;
     flex-direction: column;
     gap: 8px;
+
 }
 
 .footer__social {
     display: flex;
     gap: 16px;
+}
+
+.women .footer__link {
+    color: #C300C7;
+}
+
+.men .footer__link {
+    color: #1178B2;
 }
 
 @media (max-width: 880px) {
